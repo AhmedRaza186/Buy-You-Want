@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>My - Cart </h1>
+        <div class="cart" id="cart">
+            <p>Open Cart</p>
+            <div id="cart-icon" onclick="openCart()">🛒</div>
+        </div>
+    </header>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="sidebar-header">
+            <button onclick="closeCart()"><i class="fa-solid fa-arrow-left"></i>Close Cart</button>
+            <h2>Your Cart</h2>
+        </div>
+    </div>
+    <main>
+        <h2>Men</h2>
+        <div class="container">
+            <div class="items">
+                <img src="./man1.png" alt="Shirt 1">
+                <h3>Men Wear</h3>
+                <p>Timeless white cotton shirt perfect for any occasion.</p>
+                <div class="price-add">
+                    <span>$25.00</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="./man2.png" alt="Shirt 2">
+                <h3>Men Wear</h3>
+                <p>Soft washed denim, stylish and durable.</p>
+                <div class="price-add">
+                    <span>$35.00</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="./man3.png" alt="Shirt 3">
+                <h3>Men Wear</h3>
+                <p>Modern plaid pattern for a cool street look.</p>
+                <div class="price-add">
+                    <span>$30.00</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="./man4.png" alt="Shirt 4">
+                <h3>Men Wear</h3>
+                <p>Perfect for office wear or formal events.</p>
+                <div class="price-add">
+                    <span>$40.00</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="./watches.png" alt="Shirt 4">
+                <h3>Men Wear</h3>
+                <p>Perfect for office wear or formal events.</p>
+                <div class="price-add">
+                    <span>$40.00</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="./watches2.png" alt="Shirt 4">
+                <h3>Men Wear</h3>
+                <p>Perfect for office wear or formal events.</p>
+                <div class="price-add">
+                    <span>$40.00</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="./watch3.png" alt="Shirt 4">
+                <h3>Men Wear</h3>
+                <p>Perfect for office wear or formal events.</p>
+                <div class="price-add">
+                    <span>$40.00</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <div id="overlay"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
