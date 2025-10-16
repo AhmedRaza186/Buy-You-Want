@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <h1>My - Cart </h1>
+        <img src="./logo.png" alt="My-Cart">
         <div class="cart" id="cart">
             <p>Open Cart</p>
             <div id="cart-icon" onclick="openCart()">🛒</div>
@@ -24,14 +24,17 @@
         </div>
     </div>
     <main>
-        <h2>Men</h2>
-        <div class="container">
+        <div class="select">
+            <button id="men" onclick="changeToMen()">Men</button>
+            <button id="women" onclick="changeToWomen()">Women</button>
+        </div>
+        <div class="container" id="men-container">
             <div class="items">
                 <img src="./man1.png" alt="Shirt 1">
                 <h3>Men Wear</h3>
                 <p>Timeless white cotton shirt perfect for any occasion.</p>
                 <div class="price-add">
-                    <span>$25.00</span>
+                    <span>$25.99</span>
                     <button>Add to Cart</button>
                 </div>
             </div>
@@ -41,7 +44,7 @@
                 <h3>Men Wear</h3>
                 <p>Soft washed denim, stylish and durable.</p>
                 <div class="price-add">
-                    <span>$35.00</span>
+                    <span>$35.99</span>
                     <button>Add to Cart</button>
                 </div>
             </div>
@@ -51,7 +54,7 @@
                 <h3>Men Wear</h3>
                 <p>Modern plaid pattern for a cool street look.</p>
                 <div class="price-add">
-                    <span>$30.00</span>
+                    <span>$30.99</span>
                     <button>Add to Cart</button>
                 </div>
             </div>
@@ -61,7 +64,7 @@
                 <h3>Men Wear</h3>
                 <p>Perfect for office wear or formal events.</p>
                 <div class="price-add">
-                    <span>$40.00</span>
+                    <span>$40.99</span>
                     <button>Add to Cart</button>
                 </div>
             </div>
@@ -70,7 +73,7 @@
                 <h3>Men Wear</h3>
                 <p>Perfect for office wear or formal events.</p>
                 <div class="price-add">
-                    <span>$40.00</span>
+                    <span>$40.99</span>
                     <button>Add to Cart</button>
                 </div>
             </div>
@@ -79,7 +82,7 @@
                 <h3>Men Wear</h3>
                 <p>Perfect for office wear or formal events.</p>
                 <div class="price-add">
-                    <span>$40.00</span>
+                    <span>$40.99</span>
                     <button>Add to Cart</button>
                 </div>
             </div>
@@ -88,11 +91,69 @@
                 <h3>Men Wear</h3>
                 <p>Perfect for office wear or formal events.</p>
                 <div class="price-add">
-                    <span>$40.00</span>
+                    <span>$40.99</span>
                     <button>Add to Cart</button>
                 </div>
             </div>
         </div>
+        <div class="container" id="women-container">
+            <div class="items">
+                <img onmouseout="frontPic(this)" onmouseover="backPic(this)" src="./dress1.png" alt="Shirt 1" id="dress1">
+                <h3>Elegant Modest Wear</h3>
+                <p>The garment's modest, full-coverage silhouette, the drape of the fabric, and any subtle design details from a back-facing perspective.</p>
+                <div class="price-add">
+                    <span>$55.99</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <img onmouseout="frontPic(this)" onmouseover="backPic(this)" src="./dress2.png" alt="Shirt 2" id="dress2">
+                <h3>Modern Modest Maxi Dress</h3>
+                <p>The garment's design, including the neckline, sleeve details, and fabric texture.</p>
+                <div class="price-add">
+                    <span>$60.99</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <img onmouseout="frontPic(this)" onmouseover="backPic(this)" src="./dress3.png" alt="Shirt 3" id="dress3">
+                <h3>Modest Elegant Brown Dress</h3>
+                <p>The garment's design, including the back neckline, fit across the shoulders, and the flow of the skirt.</p>
+                <div class="price-add">
+                    <span>$45.99</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="items">
+                <img onmouseout="frontPic(this)" onmouseover="backPic(this)" src="./dress4.png" alt="Shirt 4" id="dress4">
+                <h3>Flowing Modest Dress</h3>
+                <p>The garment's long, flowing silhouette, the texture of the fabric, and any subtle rear design details.</p>
+                <div class="price-add">
+                    <span>$40.99</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="./purse1.png" alt="Shirt 4">
+                <h3>Luxury Leather Handbag</h3>
+                <p>A sleek, structured black leather handbag with a minimalist and sophisticated design. It appears to be a designer shoulder bag or tote, featuring clean lines and minimal, possibly gold-toned, hardware</p>
+                <div class="price-add">
+                    <span>$20.99</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="./purse2.png" alt="Shirt 4">
+                <h3>Vibrant Red Quilted Crossbody Bag</h3>
+                <p>A single small, quilted red purse with a structured, rectangular shape. It features a chain shoulder strap and prominent gold-toned hardware.</p>
+                <div class="price-add">
+                    <span>$40.99</span>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
     </main>
 
 
