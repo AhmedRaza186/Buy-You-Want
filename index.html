@@ -23,7 +23,7 @@
             <h2>Your Cart</h2>
         </div>
         <div class="sidebar-main">
-            <div class="sidebar-item">
+            <!-- <div class="sidebar-item">
                 <img src="./man1.png" alt="">
                 <div class="sidebar-item-txt">
                     <h3>Urban Streetwear Jacket</h3>
@@ -34,8 +34,24 @@
                     <p>$25.99</p>
                     <button>Remove From Cart</button>
                 </div>
+            </div> -->
+        </div>
+        <div class="sidebar-footer">
+            <div id="subtotal">
+                <h3>Sub Total :</h3>
+                <p>40.99$</p>
             </div>
-
+            <div id="tax">
+                <h3>Tax :</h3>
+                <p>40.99$</p>
+            </div>
+            <div id="total">
+                <h3>Total :</h3>
+                <p>40.99$</p>
+            </div>
+            <div class="order-btn">
+                <button>Order</button>
+            </div>
         </div>
     </div>
     <main>
@@ -51,7 +67,7 @@
                     hangs.</p>
                 <div class="price-add">
                     <p>$25.99</p>
-                    <button>Add to Cart</button>
+                    <button onclick="addToCart(this)">Add to Cart</button>
                 </div>
             </div>
 

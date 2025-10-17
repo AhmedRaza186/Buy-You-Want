@@ -36,3 +36,10 @@ function backPic(img) {
   const idNum = img.id.replace('dress', '')
   img.src = `./back${idNum}.png`
 }
+
+function addToCart(btn) {
+  // Find the parent item card
+  let item = btn.closest('.items');
+  
+
+}
