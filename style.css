@@ -158,7 +158,8 @@ main .select {
   margin-top: 50px;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 5%;
-  justify-self: center;
+  /* justify-self: center; */
+  margin: 25px auto;
   color: #ffffff;
 }
 #women-container {
@@ -241,7 +242,7 @@ main .select {
   z-index: 998;
   display: none;
 }
-@media (max-width : 915px) {
+/* @media (max-width : 915px) {
 
 }
 @media (max-width : 650px) {
@@ -254,7 +255,7 @@ main .select {
   .items{
     width: 300px;
   }
-}
+} */
 @media (max-width: 1024px) {
    header img{
     width: 20%;
@@ -287,6 +288,9 @@ main .select {
   }
   .items{
     width: 300px;
+  }
+  .container{
+    gap: 4%;
   }
 
   .sidebar-header {
@@ -335,8 +339,16 @@ main .select {
     margin: 10px 0 0 0;
     font-size: 1.2rem;
   }
+    .container{
+    gap: 2%;
+  }
+  /* .items{
+    margin-right: 20px;
+  } */
+  
+}
+@media (max-width: 480px) {
   .items{
-    /* width: 270px; */
-    margin: 0 auto;
+    margin-right: 40px;
   }
 }
