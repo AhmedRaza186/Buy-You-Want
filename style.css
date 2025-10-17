@@ -347,7 +347,7 @@ main .select {
   } */
   
 }
-@media (max-width: 480px) {
+@media (max-width: 380px) {
   .items{
     margin-right: 40px;
   }
