@@ -45,32 +45,52 @@ function addToCart(btn) {
   let title = item.children[1].innerText
   let description = item.children[2].innerText
   let price = item.children[3].firstElementChild.innerText
-
+  
   let sidebarItem = document.createElement('div')
   sidebarItem.setAttribute('class', 'sidebar-item')
   sidebarItem.innerHTML = `<img src="${img}" alt=""><div class="sidebar-item-txt"><h3>${title}</h3><p>${description}</p></div><div class="sidebar-price-dlt"><p>${price}</p><button onclick="removeFromCart(this)">Remove From Cart</button></div>`
   document.getElementsByClassName('sidebar-main')[0].appendChild(sidebarItem)
-  priceNum = Number(price.replace('$', ''))
+ let priceNum = Number(price.replace('$', ''))
   subArr.push(priceNum)
   let subTotal = subArr.reduce(function(total,curr){
-   return total + curr
-
+    return total + curr
+    
   },0)
   subTotal = subTotal.toFixed(2)
-
-subTotal = Number(subTotal)
-let tax = Number( subTotal / 7)
-let total = Number( subTotal + tax)
-
-tax = Math.floor(tax)
-total = total.toFixed(2)
-document.getElementById('subtotal').lastElementChild.innerText = `$${subTotal}`
-document.getElementById('total').lastElementChild.innerText = `$${tax}`
-document.getElementById('total').lastElementChild.innerText = `$${total}`
-console.log(tax)
+  
+  subTotal = Number(subTotal)
+  let tax = Number( subTotal / 7)
+  let total = Number( subTotal + tax)
+  
+  tax = Math.floor(tax)
+  total = total.toFixed(2)
+  document.getElementById('subtotal').lastElementChild.innerText = `$${subTotal}`
+  document.getElementById('tax').lastElementChild.innerText = `$${tax}`
+  document.getElementById('total').lastElementChild.innerText = `$${total}`
+  console.log(tax)
   
 }
 
 function removeFromCart(btn){
-btn.closest('.sidebar-item').style.display = 'none'
+  let item = btn.closest('.sidebar-item')
+  item.style.display = 'none'
+  let price = item.children[2].firstElementChild.innerText
+  let priceNum = Number(price.replace('$', ''))
+
+  let subText = document.getElementById('subtotal').lastElementChild.innerText
+  let currentSub = Number(subText.replace('$', ''))
+
+  let newSub = currentSub - priceNum
+  newSub = newSub.toFixed(2)
+  
+  subTotal = Number(newSub)
+  let tax = Number( subTotal / 7)
+  let total = Number( subTotal + tax)
+  
+  tax = Math.floor(tax)
+  total = total.toFixed(2)
+  document.getElementById('subtotal').lastElementChild.innerText = `$${subTotal}`
+  document.getElementById('tax').lastElementChild.innerText = `$${tax}`
+  document.getElementById('total').lastElementChild.innerText = `$${total}`
+
 }
