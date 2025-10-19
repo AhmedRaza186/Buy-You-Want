@@ -30,12 +30,12 @@ function changeToWomen() {
 
 function frontPic(img) {
   const idNum = img.id.replace('dress', '')
-  img.src = `./dress${idNum}.png`
+  img.src = `./assets/dress${idNum}.png`
 }
 
 function backPic(img) {
   const idNum = img.id.replace('dress', '')
-  img.src = `./back${idNum}.png`
+  img.src = `./assets/back${idNum}.png`
 }
 let subArr = []
 
