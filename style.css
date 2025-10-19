@@ -16,6 +16,9 @@
   box-sizing: border-box;
   font-family: system-ui, sans-serif;
 }
+button{
+  cursor: pointer;
+}
 
 body {
   width: 100%;
@@ -269,11 +272,10 @@ header .cart {
 }
 
 .order-btn {
-  width: 100%;
+  width: 40%;
   height: 40px;
   border: none;
 }
-
 .order-btn button {
   width: 100%;
   height: 100%;
@@ -281,10 +283,15 @@ header .cart {
   color: white;
   border: none;
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
+  /* padding: 0 auto; */
   font-size: 1.5rem;
-  padding-left: 350px;
+  /* padding-left: 350px; */
   font-weight: 600;
+ 
+}
+.order-btn button:hover{
+  background: #ff4b3e;
 }
 
 main {
@@ -548,6 +555,9 @@ main .select {
     width: 80%;
     font-size: 0.75rem;
   }
+  .order-btn {
+    width: 50%;
+  }
 }
 
 
@@ -639,7 +649,6 @@ main .select {
     font-size: 0.85rem;
   }
   .footer{
-
     margin-top: 0px;
   }
   
@@ -657,14 +666,14 @@ main .select {
   .footer-links h4 {
     margin-top: 20px;
   }
+  
+}
 
+@media (max-width: 480px) {
+  header img {
+    width: 40%;
   }
   
-  @media (max-width: 480px) {
-    header img {
-      width: 40%;
-    }
-
   .cart p {
     font-size: .8rem;
   }
@@ -676,51 +685,54 @@ main .select {
   .cart-sidebar {
     width: 70%;
   }
-
+  
   .sidebar-header {
     margin-left: 15px;
     margin-top: 15px;
   }
-
+  
   .sidebar-header button {
     width: 90px;
     padding: 7px;
     font-size: 0.7rem;
   }
-
+  
   .sidebar-header h2 {
     margin: 10px 0 0 0;
     font-size: 1.2rem;
   }
-
+  
   .sidebar-item {
     padding: 10px;
   }
-
+  
   .sidebar-item img {
     width: 100%;
   }
-
+  
   .sidebar-item-txt h3 {
     font-size: 1rem;
   }
-
+  
   .sidebar-item-txt p {
     font-size: 0.85rem;
   }
-
+  
   .sidebar-price-dlt p {
     font-size: 0.9rem;
   }
-
+  
   .sidebar-price-dlt button {
     font-size: 0.75rem;
     padding: 7px 10px;
   }
-
+  
+  .order-btn {
+    width: 70%;
+  }
   .container {
     gap: 2%;
-        
+    
   }
   .footer{
 transform: translateY(50%);
